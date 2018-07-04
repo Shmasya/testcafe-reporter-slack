@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-slack-errors",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "description": "TestCafe slack reporter plugin with only errors.",
   "repository": {
     "type": "git",
@@ -17,7 +17,6 @@
   "scripts": {
     "test": "gulp test",
     "publish-please": "publish-please",
-    "prepublish": "publish-please guard",
     "prod": "gulp --production",
     "dev": "gulp watch"
   },
