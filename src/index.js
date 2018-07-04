@@ -9,8 +9,6 @@ export default function () {
             this.slack = new SlackMessage();
             this.startTime = startTime;
             this.testCount = testCount;
-
-            this.slack.sendMessage(`Starting testcafe ${startTime}. \n Running tests in: ${userAgents}`)
         },
 
         reportFixtureStart (name, path) {
@@ -22,9 +20,8 @@ export default function () {
             const hasErr = testRunInfo.errs.length > 0;
             const result = hasErr ? ':heavy_multiplication_x:' : ':heavy_check_mark: ';
 
-            this.slack.addMessage(`${result} ${name}`);
-
             if (hasErr) {
+                this.slack.addMessage(`${result} ${name}`);
                 this.renderErrors(testRunInfo.errs);
             }
         },

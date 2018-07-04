@@ -1,14 +1,14 @@
 {
-  "name": "testcafe-reporter-slack",
+  "name": "testcafe-reporter-slack-errors",
   "version": "0.0.6",
-  "description": "TestCafe slack reporter plugin.",
+  "description": "TestCafe slack reporter plugin with only errors.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Shafied/testcafe-reporter-slack.git"
+    "url": "git@github.com:Shmasya/testcafe-reporter-slack.git"
   },
   "author": {
-    "name": "Shafied",
-    "email": "shafiedn@gmail.com"
+    "name": "Shmasya",
+    "email": "me@shmasya.ru"
   },
   "main": "lib/index",
   "files": [
