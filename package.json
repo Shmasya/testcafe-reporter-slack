@@ -7,7 +7,7 @@
     "url": "git@github.com:Shmasya/testcafe-reporter-slack.git"
   },
   "author": {
-    "name": "Shmasya",
+    "name": "shmasya",
     "email": "me@shmasya.ru"
   },
   "main": "lib/index",
@@ -16,7 +16,6 @@
   ],
   "scripts": {
     "test": "gulp test",
-    "publish-please": "publish-please",
     "prod": "gulp --production",
     "dev": "gulp watch"
   },

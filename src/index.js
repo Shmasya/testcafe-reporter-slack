@@ -13,7 +13,6 @@ export default function () {
 
         reportFixtureStart (name, path) {
             this.currentFixtureName = name;
-            this.slack.addMessage(this.currentFixtureName);
         },
 
         reportTestDone (name, testRunInfo) {
@@ -21,7 +20,7 @@ export default function () {
             const result = hasErr ? ':heavy_multiplication_x:' : ':heavy_check_mark: ';
 
             if (hasErr) {
-                this.slack.addMessage(`${result} ${name}`);
+                this.slack.addMessage(`${this.currentFixtureName} — ${result} ${name}`);
                 this.renderErrors(testRunInfo.errs);
             }
         },
