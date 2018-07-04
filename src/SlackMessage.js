@@ -24,12 +24,6 @@ export default class SlackMessage {
             username: envs('TESTCAFE_SLACK_BOT', 'testcafebot'),
             text: message
         }, slackProperties), function (err, response) {
-            if(err) {
-                console.log('Unable to send a message to slack');
-                console.log(response);
-            } else {
-                console.log(`The following message is send to slack: \n ${message}`);
-            }
         })
     }
 
